@@ -33,11 +33,15 @@ h4 {
 
 a {
 	text-decoration: none;
+}
+
+span {
+	text-decoration: none;
 	outline: none;
 	color: white;
 }
 
-a:hover {
+span:hover {
 	color: #349E95;
 }
 
