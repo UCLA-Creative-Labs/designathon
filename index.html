@@ -20,15 +20,11 @@
 		</div>
 		</div>
 		<div id="links">
-			<h4 class="links_header" onclick="smoothScroll()">about</h4>
-			<h4 class="links_header">schedule</h4>
-			<h4 class="links_header">register</h4>
+			<h4 class="links_header" onclick="smoothScroll(document.getElementById('about'))">about</h4>
+			<h4 class="links_header" onclick="smoothScroll(document.getElementById('schedule'))">schedule</h4>
+			<h4 class="links_header" onclick="smoothScroll(document.getElementById('register'))">register</h4>
 		</div>
 	</div>
-
-
-
-
 
 	<div class="page" id="about" href="#about">
 		<div>
@@ -49,7 +45,7 @@
 
 
 
-	<div class="page" i>
+	<div class="page" id="schedule">
 		<div>
 			<h2>schedule</h2>
 			<p id="title">Saturday, April 28th</p>
@@ -61,7 +57,7 @@
 				<img src="assets/plant2.png" class="right">
 			</div>
 
-			<div class="text_container" id="schedule" >
+			<div class="text_container" id="schedule_container" >
 				<div class="schedule_row">
 					<p>09:30 AM</p>
 					<p>opening ceremony</p>
@@ -94,30 +90,35 @@
 		</div>
 	</div>
 
-	<div class="page half">
+	<div class="page half" id="register">
 		<div class="button unselectable">register</div>
-		<img id="bottom_img" src="assets/footer_1.png">
+		<div style="position: relative; height: 100%; color: white;">
+
+			<img id="bottom_img" src="assets/footer_1.png">
+			<div class="footer">
+					<p class="white">made with love by</p>
+				<p class="white"><a target="_blank" href="http://www.uclacreatives.com"><span>Creative Labs</span></a> + <a target="_blank" href="http://www.bruinentrepreneurs.org"><span>Bruin Entrepreneurs</span></a></p>
+
+			</div>
+		</div>
 
 	</div>
-		<div class="footer">
-		<p class="white">made with love by</p>
-			<p class="white">Creative Labs + Bruin Entrepreneurs</p>
-	</div>
+
 	<script>
-		function smoothScroll(){
-			elmnt = document.getElementById("projects");
-			scrollTo(document.body, elmnt.offsetTop, 600);
-			function scrollTo(element, to, duration) {
-				if (duration <= 0) return;
-				var difference = to - element.scrollTop;
-				var perTick = difference / duration * 10;
-				setTimeout(function() {
-					element.scrollTop = element.scrollTop + perTick;
-					if (element.scrollTop === to) return;
-					scrollTo(element, to, duration - 10);
-				}, 10);
+			function smoothScroll(elmnt){
+				scrollTo(document.documentElement, elmnt.offsetTop, 600);
+
+				function scrollTo(element, to, duration) {
+				    if (duration <= 0) return;
+				    var difference = to - element.scrollTop;
+				    var perTick = difference / duration * 10;
+				    setTimeout(function() {
+				        element.scrollTop = element.scrollTop + perTick;
+				        if (element.scrollTop === to) return;
+				        scrollTo(element, to, duration - 10);
+				    }, 10);
+				}
 			}
-		}
 	</script>
 </body>
 </html>

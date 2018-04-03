@@ -3,6 +3,8 @@ body {
 	margin: 0 0 0 0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
+	display: flex;
+	flex-direction: column;
 }
 
 p {
@@ -28,6 +30,17 @@ h4 {
 	overflow: hidden;
 	opacity: .7;
 }
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: white;
+}
+
+a:hover {
+	color: #349E95;
+}
+
 .page {
 	width:100vw;
 	height: 100vh;
@@ -45,11 +58,11 @@ h4 {
 	justify-content: space-between;
 	flex-direction: column;
 	display: flex;
-	overflow: hidden;
-	margin-top: 10rem;
 }
 
 .half {
+	overflow: visible;
+
 	height: 50vh;
 	display: flex;
 	flex-direction: column;
@@ -68,7 +81,7 @@ h4 {
 		left: 50%;
 		position: relative;
 		margin: 0;
-		margin-top: 4rem;
+		margin-top: 3rem;
 		transform: translate(-50%, 0);
 }
 
@@ -94,7 +107,7 @@ h4 {
 }
 	.text_container {
 			margin: 0;
-			margin-top: 4rem;
+			margin-top: 2.5rem;
 			width: 25%;
 	}
 
@@ -104,7 +117,7 @@ h4 {
 			transform: translate(-50%, 0);
 	}
 
-	#schedule {
+	#schedule_container {
 		display: flex;
 		flex-direction: column;
 		flex: 3;
@@ -185,18 +198,19 @@ img {
 #bottom_img {
 	width: 142%;
 	justify-content: center;
-	right: 4%;
-	top: 7%;
-	position: relative;
+	transform: translateX(-2%);
 }
 
 .footer {
-	display: flex;
-	transform: translateY(-150%);
+/*	display: flex;
 	justify-content: center;
-	position: absolute;
 	width: 100vw;
-	flex-direction: column;
+	flex-direction: column;*/
+/*	height: 100px;
+*/	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .white {
@@ -204,4 +218,9 @@ img {
 	text-align: center;
 	justify-content: center;
 	margin: 0;
+/*
+    position: absolute;
+    bottom: 8px;
+    left: 16px;*/
+
 }
