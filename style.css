@@ -67,10 +67,9 @@ span:hover {
 .half {
 	overflow: visible;
 
-	height: 65vh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	margin-top: 10rem;
 }
 
 #headerimage {
@@ -141,6 +140,7 @@ span:hover {
 		display: flex;
 		justify-content: space-between;
 		align-content: space-between;
+		font-size: 1.2rem;
 	}
 
 #scheduleoptions {
@@ -163,6 +163,9 @@ img {
 
 
 /* BUTTON CODE */
+#button_link {
+	margin-top: 150px;
+}
         .button {
             height: 50px;
             width: 250px;
@@ -228,3 +231,46 @@ img {
     left: 16px;*/
 
 }
+@media (max-width:1004px)  { 
+	#schedule_container {
+		flex: 8;
+	}
+	#paragraph1 {
+		width: 80%;
+	}
+	h1 {
+		font-size: 5.5rem;
+	}
+	#title {
+		font-size: 1rem;
+	}
+	.links_header {
+		font-size: 1.0rem;
+	}
+	.half {
+		height: 65vh;
+	}
+}
+
+@media (max-width: 600px) {
+	.schedule_row {
+		font-size: 1.2rem;
+	}
+	#paragraph1 {
+		width: 90%;
+	}
+	h1 {
+		font-size: 4.0rem;
+	}
+	#title {
+		font-size: .8rem;
+	}
+	.links_header {
+		font-size: 0.7rem;
+	}
+	p {
+		font-size: 0.8rem;
+	}
+}
+
+
