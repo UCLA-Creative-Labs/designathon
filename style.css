@@ -67,7 +67,7 @@ span:hover {
 .half {
 	overflow: visible;
 
-	height: 50vh;
+	height: 65vh;
 	display: flex;
 	flex-direction: column;
 	margin-top: 10rem;
@@ -178,7 +178,6 @@ img {
             cursor: none;
             transition: 0.2s;
             position: relative;
-            margin-top: 14rem;
         }
         .button:hover {
             background-color: #68B5AC;
@@ -201,8 +200,9 @@ img {
 
 #bottom_img {
 	width: 142%;
-	justify-content: center;
-	transform: translateX(-2%);
+	bottom: -7px;
+	left: -18px;
+	position: absolute;	
 }
 
 .footer {
@@ -212,7 +212,7 @@ img {
 	flex-direction: column;*/
 /*	height: 100px;
 */	position: absolute;
-	bottom: 100px;
+	bottom: 20px;
 	left: 50%;
 	transform: translateX(-50%);
 }
