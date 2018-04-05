@@ -260,16 +260,32 @@ img {
 		width: 90%;
 	}
 	h1 {
-		font-size: 4.0rem;
+		font-size: 3.0rem;
+	}
+	h2 {
+		margin-bottom: 10px;
 	}
 	#title {
-		font-size: .8rem;
+		font-size: .9rem;
+		margin-top: 0px;
+	}
+	#links {
+		width: 90%;
 	}
 	.links_header {
-		font-size: 0.7rem;
+		font-size: 0.9rem;
 	}
 	p {
 		font-size: 0.8rem;
+	}
+	.scheduleflexplant {
+		display: none;
+	}
+	#schedule_container {
+		margin:50px;
+	}
+	.footer {
+		bottom: 5px;
 	}
 }
 
