@@ -78,6 +78,11 @@ span:hover {
 	margin-top: 1em;
 }
 
+#sponsorimage {
+	width: 40em; 
+	margin-top: 1em;
+}
+
 #links {
 	text-align: center;	
 	display: flex;
