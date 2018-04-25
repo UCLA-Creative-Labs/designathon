@@ -361,6 +361,7 @@ img {
 	}
 	#links {
 		width: 90%;
+		display: none;
 	}
 	.links_header {
 		font-size: 0.9rem;
