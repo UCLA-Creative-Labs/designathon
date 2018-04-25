@@ -281,6 +281,9 @@ img {
 }
 
 @media only screen and (max-width:1004px)  { 
+	#headerimage{
+		width: 60vw;
+	}
 	#schedule_container {
 		flex: 8;
 	}
@@ -302,6 +305,10 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
+	#headerimage{
+		width: 88vw;
+	}
+
 	.schedule_row {
 		font-size: 1.2rem;
 	}
